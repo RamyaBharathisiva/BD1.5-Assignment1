@@ -1,9 +1,12 @@
 const express = require('express');
 const { resolve } = require('path');
-const cors=require('cors');
+const cors = require('cors');
+
+const app = express(); // Define app before using it
 app.use(cors());
-const app = express();
+
 const port = 3000;
+
 
 let taxRate=5;
 let DiscountPercentage=10;
